@@ -6,7 +6,7 @@ module ScoreScraper
 		@registered = []
 
 		def register(class_name, autoload_require)
-			ScoreScraper.autoload(class_name, autoload_require)
+			ScoreScraper::Scrapers.autoload(class_name, autoload_require)
 			self.registered.push(class_name)
 		end
 

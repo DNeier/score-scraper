@@ -1,6 +1,6 @@
 module ScoreScraper
 	module Scrapers
-		class Mlb < Scraper
+		class Mlb < Scraper 
 
 			private
 

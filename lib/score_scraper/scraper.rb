@@ -1,12 +1,11 @@
 module ScoreScraper
 	class Scraper
-
 		def initialize(search_date = nil, teams = [])
 			@teams = teams
 			@search_date = search_date || Time.now.strftime("%Y-%m-%d") 
 		end
 
-		def games_for_teams
+		def team_games 
 			team_games = []
 			(games || []).each do |game|
 				if teams.empty? || is_team_game?(game)

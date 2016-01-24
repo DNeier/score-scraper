@@ -1,6 +1,6 @@
 module ScoreScraper
 	module Scrapers
-		class Nba < Scraper
+		class Nba < Scraper 
 
 			private
 
