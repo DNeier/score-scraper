@@ -2,10 +2,10 @@ module ScoreScraper
 	class Scraper
 		def initialize(search_date = nil, teams = [])
 			@teams = teams
-			@search_date = search_date || Time.now.strftime("%Y-%m-%d") 
+			@search_date = search_date || Time.now.strftime("%Y-%m-%d")
 		end
 
-		def team_games 
+		def team_games
 			team_games = []
 			(games || []).each do |game|
 				if teams.empty? || is_team_game?(game)
@@ -13,7 +13,7 @@ module ScoreScraper
 						home_team: home_team(game),
 						away_team: away_team(game),
 						game_state: game_state(game)
-					})	
+					})
 				end
 			end
 
@@ -82,7 +82,7 @@ module ScoreScraper
 		end
 
 		def is_team_game?(game)
-			teams.include?(get_abbreviation(game, true).downcase) || teams.include?(get_abbreviation(game).downcase)
+			teams.include?(abbreviation(game, true).downcase) || teams.include?(abbreviation(game).downcase)
 		end
 
 		def parsed_data

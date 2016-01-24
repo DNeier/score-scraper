@@ -1,4 +1,4 @@
-module ScoreScraper 
+module ScoreScraper
 	class Team
 		attr_reader :city, :nickname, :abbreviation, :score
 

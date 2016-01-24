@@ -1,11 +1,11 @@
 module ScoreScraper
 	module Scrapers
-		class Nba < Scraper 
+		class Nba < Scraper
 
 			private
 
 			def formatted_url
-				@formatted_url ||= "http://data.nba.com/jsonp/5s/json/cms/noseason/scoreboard/#{search_year}#{search_month}#{search_day}/games.json" 
+				@formatted_url ||= "http://data.nba.com/jsonp/5s/json/cms/noseason/scoreboard/#{search_year}#{search_month}#{search_day}/games.json"
 			end
 
 			def games

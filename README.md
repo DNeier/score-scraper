@@ -21,13 +21,23 @@ Or install it yourself as:
 
 ## Usage
 
+### Get scores of games for nba teams
 ```ruby
-require 'score-scraper'
+require 'score_scraper'
+
+scraper = ScoreScraper::Scrapers::Nba.new(Time.now.strftime("%Y-%m-%d"), # Date you want to search
+																					['chi','det'])								 # Teams you want to find, pass nothing in for all teams
+
+# team_games will return Game objects for the teams defined in the initialize
+games = scraper.team_games
+# => [#<ScoreScraper::Game:0x00000001b00b48 @home_team=#<ScoreScraper::Team:0x00000001b00e68 @city="Houston", @nickname="Rockets", @abbreviation="HOU", @score=0>, @away_team=#<ScoreScraper::Team:0x00000001b00c38 @city="Dallas", @nickname="Mavericks", @abbreviation="DAL", @score=0>, @game_state="1Q">, #<ScoreScraper::Game:0x00000001b00530 @home_team=#<ScoreScraper::Team:0x00000001b008c8 @city="Toronto", @nickname="Raptors", @abbreviation="TOR", @score=0>, @away_team=#<ScoreScraper::Team:0x00000001b00670 @city="Los Angeles", @nickname="Clippers", @abbreviation="LAC", @score=0>, @game_state="6:00 pm ET">]
 ```
 
 ## Development
 
 Contributions are welcome, feel free to expand on current functionality or add new leagues.
+
+
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 module ScoreScraper
 	module Scrapers
-		class Mlb < Scraper 
+		class Mlb < Scraper
 
 			private
 
@@ -29,7 +29,7 @@ module ScoreScraper
 				elsif game_status.downcase == 'preview'
 					game_state = game['time']
 				elsif game['status']['top_inning'] && game['status']['inning']
-					is_top_inning = game['status']['top_inning'].downcase == 'y'		
+					is_top_inning = game['status']['top_inning'].downcase == 'y'
 					game_state = is_top_inning ? "T#{game['status']['inning']}" : "B#{game['status']['inning']}"
 				end
 
