@@ -1,8 +1,6 @@
-# Score::Scraper
+# score-scraper
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/score/scraper`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem is used to retrieve NBA or MLB scores. Please note I do not own any of the information provided by this gem, all nba scores are retrieved from a publicly available json file on nba.com and all mlb scores are are retreived from a publicly available json file on mlb.com. It is entirely possible that these files will change and this gem will break, if that happens I will do my best to keep up with any changes.
 
 ## Installation
 
@@ -20,19 +18,21 @@ Or install it yourself as:
 
     $ gem install score-scraper
 
+
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'score-scraper'
+```
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Contributions are welcome, feel free to expand on current functionality or add new leagues.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/score-scraper.
+Bug reports and pull requests are welcome on GitHub at https://github.com/DNeier/score-scraper.
+
 
 
 ## License
