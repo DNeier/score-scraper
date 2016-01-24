@@ -1,12 +1,12 @@
 module ScoreScraper
-	module Scoreboards
-		class Mlb < Scoreboard
+  module Scoreboards
+    class Mlb < Scoreboard
 
-			private
+      private
 
-			def parser
-				@parser ||= ScoreScraper::Scrapers::Mlb.new(search_date, teams)
-			end
-		end
-	end
+      def parser
+        @parser ||= ScoreScraper::Scrapers::Mlb.new(search_date, teams)
+      end
+    end
+  end
 end

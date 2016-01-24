@@ -5,7 +5,7 @@ describe ScoreScraper do
     expect(ScoreScraper::VERSION).not_to be nil
   end
 
-	describe '.games_for_teams' do
-	
-	end
+  describe '.games_for_teams' do
+  
+  end
 end

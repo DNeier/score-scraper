@@ -26,7 +26,7 @@ Or install it yourself as:
 require 'score_scraper'
 
 scraper = ScoreScraper::Scrapers::Nba.new(Time.now.strftime("%Y-%m-%d"), # Date you want to search
-																					['chi','det'])								 # Teams you want to find, pass nothing in for all teams
+                                          ['chi','det'])                 # Teams you want to find, pass nothing in for all teams
 
 # team_games will return Game objects for the teams defined in the initialize
 games = scraper.team_games

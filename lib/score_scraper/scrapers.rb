@@ -1,16 +1,16 @@
 module ScoreScraper
-	module Scrapers
-		extend self
+  module Scrapers
+    extend self
 
-		attr_reader :registered
-		@registered = []
+    attr_reader :registered
+    @registered = []
 
-		def register(class_name, autoload_require)
-			ScoreScraper::Scrapers.autoload(class_name, autoload_require)
-			self.registered.push(class_name)
-		end
+    def register(class_name, autoload_require)
+      ScoreScraper::Scrapers.autoload(class_name, autoload_require)
+      self.registered.push(class_name)
+    end
 
-	end
+  end
 end
 
 ScoreScraper::Scrapers.register(:Nba, 'score_scraper/scrapers/nba')
