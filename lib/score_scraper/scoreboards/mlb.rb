@@ -5,7 +5,7 @@ module ScoreScraper
 			private
 
 			def parser
-				@parser ||= Scrapers::Mlb.new(search_date, teams)
+				@parser ||= ScoreScraper::Scrapers::Mlb.new(search_date, teams)
 			end
 		end
 	end

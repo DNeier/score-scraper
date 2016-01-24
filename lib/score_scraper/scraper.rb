@@ -10,7 +10,7 @@ module ScoreScraper
 			team_games = []
 			(games || []).each do |game|
 				if teams.empty? || is_team_game?(game)
-					team_games << Games::Game.new({
+					team_games << ScoreScraper::Game.new({
 						home_team: home_team(game),
 						away_team: away_team(game),
 						game_state: game_state(game)
@@ -58,7 +58,7 @@ module ScoreScraper
 		end
 
 		def get_game(game, is_home = false)
-			Teams::Team.new({
+			ScoreScraper::Team.new({
 				city: city(game, is_home),
 				nickname: nickname(game, is_home),
 				abbreviation: abbreviation(game, is_home),
