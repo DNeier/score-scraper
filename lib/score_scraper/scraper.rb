@@ -61,7 +61,7 @@ module ScoreScraper
         city: city(game, is_home),
         nickname: nickname(game, is_home),
         abbreviation: abbreviation(game, is_home),
-        seore: score(game, is_home)
+        score: score(game, is_home)
       })
     end
 

@@ -34,7 +34,7 @@ module ScoreScraper
     def team_games
       return @team_games unless @team_games.nil?
 
-      @team_games = parser.games_for_teams || {}
+      @team_games = parser.team_games || {}
     end
   end
 end
