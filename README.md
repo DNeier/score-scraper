@@ -1,4 +1,5 @@
 # score-scraper
+[![Code Climate](https://codeclimate.com/github/DNeier/score-scraper/badges/gpa.svg)](https://codeclimate.com/github/DNeier/score-scraper)
 
 This gem is used to retrieve NBA or MLB scores. Please note I do not own any of the information provided by this gem, all nba scores are retrieved from a publicly available json file on nba.com and all mlb scores are are retreived from a publicly available json file on mlb.com. It is entirely possible that these files will change and this gem will break, if that happens I will do my best to keep up with any changes.
 
